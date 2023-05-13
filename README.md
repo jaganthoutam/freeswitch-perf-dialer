@@ -1,6 +1,25 @@
 FreeSWITCH call generator for performance tests
 ===============================================
 
+  > ### Installation
+> 
+> There are several options to configure `mod_esl` to add support for
+> multiple languages.
+> 
+> First, in `libs/esl`, type make
+> 
+>     # Under the FreeSWITCH source top-level directory
+>     cd /usr/src/freeswitch/libs/esl
+>     make
+> 
+> Then, to enable specific languages type  `make` + one of:
+> 
+> `perlmod-install` to add Perl support `phpmod` to add PHP support ...
+> 
+> Example:
+> 
+    make perlmod-install
+
 This is a simple dialer that connects to FreeSWITCH via event socket and
 originates calls at a given interval.
 
